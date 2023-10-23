@@ -12,7 +12,7 @@ services:
     volumes:
       - /home/mysql/data:/var/lib/mysql
     networks:
-      myynetwork:
+      mynetwork:
        
       
 
@@ -28,11 +28,11 @@ services:
     depends_on:
       - mysqldb
     networks:
-      myynetwork:
+      mynetwork:
        
 
   
 networks:
-  myynetwork:
+  mynetwork:
    
         
