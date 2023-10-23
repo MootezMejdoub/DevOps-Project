@@ -28,7 +28,7 @@ services:
     depends_on:
       - mysqldb
     networks:
-      - mynetwork :
+      - mynetwork:
 
   
 networks:
