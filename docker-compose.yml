@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  mysqldb:
+    container_name: mysqldb
+    image: mysql:8
+    restart: unless-stopped
+    environment:
+      MTSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
+    volume:
+      - /home/mysql/data:/var/lib/mysql
+  
+  spring_app:
+    image : springapp
+    container_name: springapp
+    restart: on-failure
+    ports:
+      - 9090:9090
+    depends_on:
+    - mysqldb
