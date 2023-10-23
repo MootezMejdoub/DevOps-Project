@@ -12,8 +12,8 @@ services:
     volumes:
       - /home/mysql/data:/var/lib/mysql
     networks:
-      mynetwork:
-          ipv4_address: 172.17.0.10
+      my-network:
+        ipv4_address: 172.17.0.10
       
 
   
@@ -28,12 +28,14 @@ services:
     depends_on:
       - mysqldb
     networks:
-      mynetwork:
+      my-network:
+       
 
   
 networks:
-  mynetwork:
+  my-network:
     driver: bridge
     ipam:
+      driver: default
       config:
-        - subnet: 172.17.0.0/16 
+        - subnet: 172.17.0.0/16
