@@ -13,7 +13,7 @@ services:
       - /home/mysql/data:/var/lib/mysql
     networks:
       myynetwork:
-        ipv4_address: 172.33.0.10
+       
       
 
   
@@ -34,9 +34,5 @@ services:
   
 networks:
   myynetwork:
-    driver: bridge
-    ipam:
-      driver: default
-      config:
-        - subnet: 172.33.0.0/16
+   
         
