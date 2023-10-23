@@ -13,10 +13,14 @@ services:
       - /home/mysql/data:/var/lib/mysql
   
   spring_app:
-    image : springapp
+    build:
+      context: ./
+      dockerfile: Dockerfile
     container_name: springapp
     restart: on-failure
     ports:
       - 9090:9090
     depends_on:
-    - mysqldb
+      - mysqldb
+   
+  
