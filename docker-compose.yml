@@ -12,7 +12,7 @@ services:
     volumes:
       - /home/mysql/data:/var/lib/mysql
     networks:
-      - myynetwork:
+      - mynetwork:
           ipv4_address: 172.17.0.10
       
 
@@ -28,8 +28,8 @@ services:
     depends_on:
       - mysqldb
     networks:
-      - myynetwork
+      - mynetwork :
 
   
 networks:
-  myynetwork:
+  mynetwork:
