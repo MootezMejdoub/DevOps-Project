@@ -12,7 +12,9 @@ services:
     volumes:
       - /home/mysql/data:/var/lib/mysql
     networks:
-      - mynetwork
+      - myynetwork:
+        ipv4_address: 172.17.0.10
+      
 
   
   spring_app:
@@ -26,8 +28,8 @@ services:
     depends_on:
       - mysqldb
     networks:
-      - mynetwork
+      - myynetwork
 
   
 networks:
-  mynetwork:
+  myynetwork:
