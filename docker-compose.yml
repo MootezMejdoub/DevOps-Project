@@ -12,11 +12,8 @@ services:
     volumes:
       - /home/mysql/data:/var/lib/mysql
     networks:
-     - mynetworks
-       
-      
+      - mynetworks
 
-  
   spring_app:
     build:
       context: .
@@ -29,10 +26,6 @@ services:
       - mysqldbbb
     networks:
       - mynetworks
-       
 
-  
 networks:
   mynetworks:
-   
-        
