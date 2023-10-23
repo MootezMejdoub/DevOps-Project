@@ -1,7 +1,7 @@
 version: "3"
 
 services:
-  mysqldb:
+  mysqldbb:
     container_name: mysqldbb
     image: mysql:8
     restart: unless-stopped
@@ -26,7 +26,7 @@ services:
     ports:
       - 9090:9090
     depends_on:
-      - mysqldb
+      - mysqldbb
     networks:
       - mynetworks
        
