@@ -14,7 +14,7 @@ services:
   
   spring_app:
     build:
-      context: ./
+      context: .
       dockerfile: Dockerfile
     container_name: springapp
     restart: on-failure
