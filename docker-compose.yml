@@ -1,9 +1,9 @@
-version: "3"
+version: "3.9"
 
 services:
   mysqldbbb:
     container_name: mysqldbbb
-    image: mysql:8
+    image: mysql
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: root
