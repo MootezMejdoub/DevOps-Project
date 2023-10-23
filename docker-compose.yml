@@ -9,7 +9,7 @@ services:
       MTSQL_ROOT_PASSWORD: root
     ports:
       - 3306:3306
-    volume:
+    volumes:
       - /home/mysql/data:/var/lib/mysql
   
   spring_app:
