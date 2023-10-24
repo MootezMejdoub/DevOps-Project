@@ -1,13 +1,13 @@
 # Spring Boot - Academic project  
 For 4th year classes (engineering degree): ESPRIT engineering school
 
-## Class Diagram
+## Class Diagrama
 
 ![image](https://user-images.githubusercontent.com/47184233/205064014-71e3b383-81ae-4554-98af-e2522a972220.png)
 
 
-## Requirementssxzzeaaaaaea
-z
+## Req 
+
 For building and running the application you neeed:
 
 - [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
