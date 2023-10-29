@@ -8,6 +8,7 @@ import tn.esprit.kaddemproject.entities.*;
 import tn.esprit.kaddemproject.generic.IGenericServiceImp;
 import tn.esprit.kaddemproject.repositories.ContratRepository;
 import tn.esprit.kaddemproject.repositories.DepartementRepository;
+import tn.esprit.kaddemproject.repositories.UniversiteRepository;
 import tn.esprit.kaddemproject.util.HelperClass;
 
 import java.time.LocalDate;
@@ -31,9 +32,6 @@ public class IUniversiteServiceImpl extends IGenericServiceImp<Universite,Intege
         if (universite!= null && departement !=null){
             universite.getDepartements().add(departement);
         }
-    }
-    public Universite addUniversite(Universite uv){
-        return universiteRepository.add(uv);
     }
 
 
@@ -74,6 +72,14 @@ public class IUniversiteServiceImpl extends IGenericServiceImp<Universite,Intege
         }
 
         return map;
+    }
+
+    @Override
+    public Universite addUniversite(Universite uv) {
+
+            return universiteRepository.save(uv);
+
+
     }
 
     public Boolean isContractBetween(Contrat contrat, LocalDate startDate, LocalDate endDate) {

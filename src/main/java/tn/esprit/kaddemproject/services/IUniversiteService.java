@@ -19,6 +19,7 @@ public interface IUniversiteService extends IGenericService<Universite,Integer> 
 
     Map<Specialite,Float> getMontantContartEntreDeuxDate(int idUniv, LocalDate startDate, LocalDate endDate);
 
-    
+    Universite addUniversite(Universite uv);
+
 
 }
