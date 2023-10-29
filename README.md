@@ -7,7 +7,7 @@ For 4th year classes (engineering degree): ESPRIT engineering school
 
 
 ## Req ++
-
+x
 
 For building and running the application you neeed:
 
