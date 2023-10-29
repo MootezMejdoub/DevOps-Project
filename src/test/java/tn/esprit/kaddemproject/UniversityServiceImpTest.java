@@ -1,26 +1,28 @@
 
 package tn.esprit.kaddemproject;
+import static org.junit.Assert.assertNotNull;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import tn.esprit.kaddemproject.entities.Universite;
+import tn.esprit.kaddemproject.services.IUniversiteService;
 
 @SpringBootTest
-
 public class UniversityServiceImpTest{
 
-@AutoWired
-IUniversiteService universiteService
+@Autowired
+IUniversiteService universiteService;
 
 
 
 
 @Test
-void testAddUniversite(){
-   
-    Universite uv= new Universite("esprit");
-    Universite savedUv= universiteService.addUniversite(uv);
+public void testAddUniversite(){
+
+    Universite uv= new Universite(1,"university",null);
+    Universite savedUv= universiteService.add(uv);
     assertNotNull(savedUv.getNomUniv());
 }
 }
