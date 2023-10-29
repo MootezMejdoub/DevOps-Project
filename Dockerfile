@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Copy the Spring Boot application JAR file into the container
 #COPY target/*.jar KaddemProject-1.0.jar
-RUN curl -o KaddemProject-1.0.jar "http://192.168.33.10:8081/repository/maven-releases/"
+RUN wget "http://192.168.33.10:8081/repository/maven-releases/com/example/KaddemProject/1.0/KaddemProject-1.0.jar" -O KaddemProject-1.0.jar
 # Expose the port your Spring Boot application will run on (adjust if needed)
 EXPOSE 8080
 
