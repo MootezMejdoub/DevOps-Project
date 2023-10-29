@@ -12,14 +12,13 @@ public class UniversityServiceImpTest{
 
 @AutoWired
 IUniversiteService universiteService
-@AutoWired
-UniversiteRepository universiteRepository;
+
 
 
 
 @Test
 void testAddUniversite(){
-    universiteRepository.
+   
     Universite uv= new Universite("esprit");
     Universite savedUv= universiteService.addUniversite(uv);
     assertNotNull(savedUv.getNomUniv());
