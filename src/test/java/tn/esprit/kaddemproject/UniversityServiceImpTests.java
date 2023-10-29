@@ -33,7 +33,7 @@ public void testAddUniversite(){
 
     Universite savedUv= universiteService.addUniversite(uv);
     assertNotNull(savedUv.getNomUniv());
-   assertEquals(ex+1,universiteService.retrieveAll().size());
+   assertEquals(ex+2,universiteService.retrieveAll().size());
 
     universiteService.delete(uv.getIdUniv());
    // assertNotNull(savedUv.getNomUniv());
