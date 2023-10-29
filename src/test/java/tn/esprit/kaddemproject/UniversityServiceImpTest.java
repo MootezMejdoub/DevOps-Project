@@ -24,5 +24,6 @@ public void testAddUniversite(){
     Universite uv= new Universite(1,"university",null);
     Universite savedUv= universiteService.addUniversite(uv);
     assertNotNull(savedUv.getNomUniv());
+
 }
 }
