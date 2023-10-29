@@ -6,6 +6,7 @@ WORKDIR /app
 
 
 #COPY target/*.jar KaddemProject-1.0.jar
+
 RUN wget "http://192.168.33.10:8081/repository/maven-releases/tn/esprit/KaddemProject/1.0/KaddemProject-1.0.jar" -O KaddemProject-1.0.jar
 # Expose the port your Spring Boot application will run on (adjust if needed)
 EXPOSE 8080
