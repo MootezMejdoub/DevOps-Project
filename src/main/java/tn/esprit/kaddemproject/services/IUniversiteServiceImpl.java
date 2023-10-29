@@ -33,7 +33,7 @@ public class IUniversiteServiceImpl extends IGenericServiceImp<Universite,Intege
         }
     }
     public Universite addUniversite(Universite uv){
-        return universiteRepository.add(uv)
+        return universiteRepository.add(uv);
     }
 
 
