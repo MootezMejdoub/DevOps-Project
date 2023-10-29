@@ -22,5 +22,6 @@ public class Universite implements Serializable{
 
     @OneToMany
     private List<Departement> departements;
+    
 
 }

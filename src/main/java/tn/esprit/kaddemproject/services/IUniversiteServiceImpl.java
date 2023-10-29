@@ -22,6 +22,7 @@ public class IUniversiteServiceImpl extends IGenericServiceImp<Universite,Intege
 
     private final ContratRepository contratRepository;
     private final IDepartementServiceImpl departementService;
+        private final UniversiteRepository universiteRepository;
 
     @Override
     public void assignUniversiteToDepartement(Integer idUniversite, Integer idDepartement) {
@@ -31,6 +32,10 @@ public class IUniversiteServiceImpl extends IGenericServiceImp<Universite,Intege
             universite.getDepartements().add(departement);
         }
     }
+    public Universite addUniversite(Universite uv){
+        return universiteRepository.add(uv)
+    }
+
 
     @Override
     public List<Departement> retrieveDepartementsByUniversite(Integer idUniversite) {
