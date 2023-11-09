@@ -7,7 +7,7 @@ x
 
 
 ## Req ++ 
-For building and running the application you neexaed:xxxxx
+For building and running the application you neexaed:xxxxxx
 
 - [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
