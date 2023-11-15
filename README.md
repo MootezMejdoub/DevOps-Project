@@ -2,7 +2,7 @@
 For 4th year classes (engineering degree): ESPRIT engineering school
 
 ## Class Diagrama
-xx
+xxx
 ![image](https://user-images.githubusercontent.com/47184233/205064014-71e3b383-81ae-4554-98af-e2522a972220.png)
 
 
